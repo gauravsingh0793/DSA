@@ -18,6 +18,8 @@ int power(){
             ans = ans * a;
         }
         return ans;
+
+        cout << ans;
     }
 
 int main(){
@@ -25,8 +27,8 @@ int main(){
         int answer = power();
         cout << "answer is:" << answer << endl;
 
-         int answer = power();
-        cout << "answer is:" << answer << endl;  // call same function again.
+         int ans = power();
+        cout << "answer is:" << ans << endl;  // call same function again.
 
 
 
