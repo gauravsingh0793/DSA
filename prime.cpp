@@ -20,7 +20,10 @@ int main(){
 
     cin >> n;
 
-    if (isPrime(n)){
+                    //we can also write like this -> bool found = isPrime(n);
+                                //if(found){  } else {} 
+
+    if (isPrime(n)){              
         cout << "Prime no";
     }
     else{

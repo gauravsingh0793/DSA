@@ -20,7 +20,7 @@ int main(){
     cout << "array at index 4 is: " << second[4]  << endl; 
 
 
-    // when we initialize the index which is present in index it also gives garbage value.
+    // when we initialize the index which is not present in index it also gives garbage value.
     int third[5] = {1,2,4,5,6};
     cout << "value at index 6 is: " << third[6] << endl;
 
@@ -49,6 +49,29 @@ int main(){
     cout << "printing done" << endl;
 
 
+    // initialize all element of array with same value by loop
+    
+    int sixth[5];
+    int value = 7;
+
+    for(int i=0; i<5; i++){
+        sixth[i] = value;
+    }
+
+
+    // printing the value 
+    for (int i=0; i<5; i++){
+        cout << sixth[i] << " ";
+    } cout << endl;
+
+    // initialize all element of array with same value by c++ STL
+
+    int arr[5];
+    fill(arr, arr + 5, 7);
+
+    for(int i=0; i<5; i++){
+        cout << arr[i] << " ";
+    }
 
     
 return 0;
